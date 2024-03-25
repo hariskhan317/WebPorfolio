@@ -11,7 +11,7 @@ export default function techStack() {
             </div>
             <div className='flex gap-8'>
                 {Skills.map((skill) => (
-                    <img src={skill} className='w-9 h-9' alt="" />
+                    <img src={skill} className='w-9 h-9' alt="skill" />
                 ))}
             </div>
         </div>

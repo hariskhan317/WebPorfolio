@@ -23,7 +23,7 @@ export default function home({homeRef}) {
                     </div>
                 </div>
                 <>
-                    {/* <img src={Profile} className='w-80 h-80 mx-auto rounded-full' /> */}
+                    {/* <img src={Profile} className='w-80 h-80 mx-auto rounded-full' alt='Profile' /> */}
                 </>
             </div>
             <TechStack />
