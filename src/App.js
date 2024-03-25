@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import Navbar from './components/navbar'
 import Home from './components/Home/home'
 import About from './components/About/about'
@@ -13,11 +13,10 @@ function App() {
     experience: useRef(null),
     contact: useRef(null),
   }
-  const [activeSection, setActiveSection] = useState('home');
+
 
   const handleNavbarSection = (section) => {
     console.log('dasjd')
-    setActiveSection(section);
     sectionRef[section].current.scrollIntoView({ behavior: 'smooth' });
   }
   return (
