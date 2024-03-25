@@ -5,10 +5,10 @@ import { TbMailOpenedFilled } from "react-icons/tb";
 
 export default function contact({contactRef}) {
     return (
-        <div className='pt-40' ref={contactRef}>
+        <div className='pt-20 md:pt-40 px-10 md:px-0' ref={contactRef}>
             <h1 className='font-bold text-lg font-montserrat text-sky-800 uppercase'>Contact</h1>
             <h1 className='mt-1 font-bold text-2xl font-montserrat text-black'>Don't be shy! Hit me up! <img className='inline w-6 h-6' src={handDown} alt='handDown' /></h1>
-            <div className='flex gap-20 mt-10'>
+            <div className='flex gap-10 md:gap-20 flex-col md:flex-row justify-center md:justify-start mt-10'>
                 <div className='flex gap-5'>
                     <FaMapLocationDot size={40} className='text-sky-800' />
                     <div>
