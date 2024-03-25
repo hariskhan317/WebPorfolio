@@ -1,0 +1,35 @@
+
+.tl-content .tl-header, 
+.tl-content .tl-body {
+    padding-left: 25.6px;
+    border-left: 3px solid rgb(7 89 133);
+}
+
+.tl-header {
+    position: relative;
+    display: grid;
+    padding-top: 2rem; 
+}
+
+.tl-marker {
+    display:block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50% / 50%;
+    background: rgb(7 89 133);
+    left: -1.1rem;
+    top: 36%;
+    transform: translate(50%,-50%);
+}
+
+.tl-content-active .tl-marker {
+    padding: 1.6px;
+    left: -1.25rem;
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgb(7 89 133);
+    background-color: rgb(7 89 133);
+    background-clip: content-box;
+    box-shadow: 0 0 15px -2px rgb(7 89 133);
+}
