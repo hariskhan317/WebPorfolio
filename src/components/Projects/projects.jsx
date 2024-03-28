@@ -20,7 +20,7 @@ export default function projects({projectsRef}) {
             </div>
             <div className='grid grid-cols-1 md:grid-cols-5 gap-14 md:mt-14'>
                 <div className='col-span-1 md:col-span-2'>
-                    <a href='https://rate-pin-frontend.vercel.app/' target="_blank" >
+                    <a href='https://rate-pin-frontend.vercel.app/' target="_blank" rel="noreferrer" >
                         <img src={RatePin} className='mt-4 w-full h-full md:h-64 rounded-lg' alt="" />
                     </a>
                 </div>
@@ -48,13 +48,13 @@ export default function projects({projectsRef}) {
                     </ul>
                     <div className='flex justify-start gap-12 pl-3'>
                         <div>
-                            <a href='https://github.com/hariskhan317/RatePin' target="_blank" className='flex gap-3 text-base font-semibold font-montserrat'>
+                            <a href='https://github.com/hariskhan317/RatePin' target="_blank" rel="noreferrer" className='flex gap-3 text-base font-semibold font-montserrat'>
                                 Code
                                 <FaGithub className='mt-0.5' />
                             </a>
                         </div>
                         <div>
-                            <a href='https://rate-pin-frontend.vercel.app/' target="_blank" className='flex gap-3 text-base font-semibold font-montserrat'>
+                            <a href='https://rate-pin-frontend.vercel.app/' target="_blank" rel="noreferrer" className='flex gap-3 text-base font-semibold font-montserrat'>
                                 Live Demo
                                 <FaExternalLinkAlt className='mt-0.5' />
                             </a>
