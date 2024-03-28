@@ -2,7 +2,6 @@ import React from 'react';
 import Skills from '../../assets/techStackSkills'
 
 
-
 export default function techStack() {
     return (
         <div className='flex flex-col lg:flex-row justify-center gap-10 mt-20 md:mt-40 px-10 md:px-0'>
