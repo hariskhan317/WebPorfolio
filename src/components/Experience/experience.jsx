@@ -10,7 +10,7 @@ export default function experience({experienceRef}) {
                     <div className="tl-header">
                         <span className="tl-marker"></span>
                         <p className="-mt-4 font-semibold text-lg font-montserrat uppercase text-black border-b border-stone-300"> Frontend Developer AT TRADEZELLA </p>
-                        <time className='mt-6 font-medium text-xs font-montserrat text-stone-500' datetime="2023-06-20"> Oct 2022 - Mar 2024 </time>
+                        <time className='mt-6 font-medium text-xs font-montserrat text-stone-600' datetime="2023-06-20"> Oct 2022 - Mar 2024 </time>
                     </div>
                     <div className="tl-body">
                         <ul className='pt-5 pb-7 list-disc px-5'>
@@ -26,7 +26,7 @@ export default function experience({experienceRef}) {
                     <div className="tl-header">
                         <span className="tl-marker"></span>
                         <p className="-mt-4  font-semibold text-lg font-montserrat uppercase text-black border-b border-stone-300"> FREELANCER AT FIVERR</p>
-                        <time className='mt-6 font-medium text-xs font-montserrat text-stone-500' datetime="2023-06-20">Sept 2021 – Aug 2022</time>
+                        <time className='mt-6 font-medium text-xs font-montserrat text-stone-600' datetime="2023-06-20">Sept 2021 – Aug 2022</time>
                     </div>
                     <div className="tl-body">
                         <ul className='pt-5 pb-7 list-disc px-5'>

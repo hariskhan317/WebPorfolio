@@ -9,8 +9,8 @@ export default function navbar({handleNavbarSection}) {
                     <ul className='flex gap-10'>
                         <li onClick={() => handleNavbarSection('home')} className='cursor-pointer font-medium text-base font-montserrat'>Home</li>
                         <li onClick={() => handleNavbarSection('about')} className='cursor-pointer font-medium text-base font-montserrat'>About</li>
+                        <li onClick={() => handleNavbarSection('projects')} className='cursor-pointer font-medium text-base font-montserrat'>Projects</li>
                         <li onClick={() => handleNavbarSection('experience')} className='cursor-pointer font-medium text-base font-montserrat'>Experience</li>
-                        {/* <li className='cursor-pointer font-bold text-xl font-montserrat'>Projects</li> */}
                         <li onClick={() => handleNavbarSection('contact')} className='cursor-pointer font-medium text-base font-montserrat'>Contact</li>
                     </ul>
                 </div>

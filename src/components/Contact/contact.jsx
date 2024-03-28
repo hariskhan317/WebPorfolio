@@ -13,14 +13,14 @@ export default function contact({contactRef}) {
                     <FaMapLocationDot size={40} className='text-sky-800' />
                     <div>
                         <h1 className='font-bold text-sm font-montserrat text-black uppercase'>Location</h1>
-                        <p className='pointer mt-4 font-medium text-base font-montserrat text-stone-500'>Staten Island, NY, United States</p>
+                        <p className='pointer mt-4 font-medium text-base font-montserrat text-stone-600'>Staten Island, NY, United States</p>
                     </div>
                 </div>
                 <div className='flex gap-5'>
                     <TbMailOpenedFilled size={40} className='text-sky-800' />
                     <div>
                         <h1 className='font-bold text-sm font-montserrat text-black uppercase'>Mail</h1>
-                        <a className='mt-4 font-medium text-base font-montserrat text-stone-500' href="mailto:harriss.khan.001@gmail.com">harriss.khan.001@gmail.com</a>
+                        <a className='mt-4 font-medium text-base font-montserrat text-stone-600' href="mailto:harriss.khan.001@gmail.com">harriss.khan.001@gmail.com</a>
                     </div>
                 </div>
             </div>
