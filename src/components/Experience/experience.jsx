@@ -2,7 +2,7 @@ import React from 'react'
 import '../../assets/style.css'
 export default function experience({experienceRef}) {
     return (
-        <div ref={experienceRef} className="mt-20 md:mt-40 px-10 md:px-0 pt-20 md:pt-40">
+        <div ref={experienceRef} className="mt-20 md:mt-40 px-10 md:px-40 pt-20 md:pt-40">
             <h1 className='font-bold text-lg font-montserrat text-sky-800 uppercase'>Experience</h1>
             <p className='mt-1 font-bold text-2xl font-montserrat text-black'>Excelled in roles at renowned companies, contributing <br /> expertise to drive impactful results. 🌟 </p>
             <div className='px-5'>

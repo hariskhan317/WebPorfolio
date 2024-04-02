@@ -4,7 +4,7 @@ import pinSeo from '../../assets/pin-seo.svg'
 
 export default function about({aboutRef}) {
   return (
-    <div ref={aboutRef} className='grid grid-cols-1 md:grid-cols-7 gap-10 pt-20 md:mt-40 pt-20 md:pt-40 px-10 md:px-0'>
+    <div ref={aboutRef} className='grid grid-cols-1 md:grid-cols-7 gap-10 pt-20 md:mt-40 pt-20 md:pt-40 px-10 md:px-40'>
           <div className='col-span-1 md:col-span-3'>
               <img src={aboutImg} className='w-full rounded-xl' alt="aboutImg" />
           </div>

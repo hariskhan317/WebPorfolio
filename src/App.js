@@ -25,8 +25,8 @@ function App() {
     <>
       {/* Header */}
       <Navbar handleNavbarSection={handleNavbarSection} />
-      <div className='container mx-auto max-w-6xl mt-20'>
-        <Home homeRef={sectionRef.home} />  
+      <div className='container mx-auto max-w-8xl mt-20'>
+        <Home homeRef={sectionRef.home} />
         <About aboutRef={sectionRef.about} />
         <Projects projectsRef={sectionRef.projects} />
         <Experience experienceRef={sectionRef.experience} />
