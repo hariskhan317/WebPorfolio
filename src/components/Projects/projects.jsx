@@ -23,7 +23,7 @@ export default function projects({projectsRef}) {
                 {/* project 1 */}
                 <div className='grid grid-cols-1 md:grid-cols-5 gap-6 md:mt-14'>
                     <div className='col-span-1 md:col-span-2'>
-                        <a href='https://rate-pin-frontend.vercel.app/' target="_blank" rel="noreferrer" >
+                        <a href='https://wander-wise.netlify.app/' target="_blank" rel="noreferrer" >
                             <img src={WanderWise} className='mt-4 w-full h-full md:h-44 rounded-lg' alt="" />
                         </a>
                     </div>
