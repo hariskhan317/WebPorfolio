@@ -1,5 +1,4 @@
 import React from 'react'
-import Profile from '../../assets/profile.jpg'
 import TechStack from './techStack';
 import { AiFillGithub } from 'react-icons/ai';
 import { FaLinkedin } from 'react-icons/fa6';
