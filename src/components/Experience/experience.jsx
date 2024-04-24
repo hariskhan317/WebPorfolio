@@ -1,11 +1,24 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import '../../assets/style.css'
-export default function experience({experienceRef}) {
+import gsap from 'gsap'; 
+
+export default function Experience() {
+
+    useEffect(() => { 
+        gsap.from('.experience', { y: 260, opacity: 0 });
+        gsap.to('.experience', 1, { y: 0, ease: 'easeOut', opacity: 1, });  
+
+        gsap.from('.experience-bottom', { y: -260, opacity: 0 });
+        gsap.to('.experience-bottom', 2, { y: 0, ease: 'easeOut', opacity: 1, });  
+      })
+
     return (
-        <div ref={experienceRef} className="mt-20 md:mt-40 px-10 md:px-10 pt-20 md:pt-40">
-            <h1 className='font-bold text-lg font-montserrat text-sky-500 uppercase'>Experience</h1>
-            <p className='mt-1 font-bold text-2xl font-montserrat text-white'>Excelled in roles at renowned companies, contributing <br /> expertise to drive impactful results. 🌟 </p>
-            <div className='px-5'>
+        <div className="px-10 md:px-28 mt-80">
+            <div className='experience'>
+                <h1 className='text-center font-bold text-lg font-montserrat text-sky-500 uppercase'>Experience</h1>
+                <p className='text-center mt-1 font-bold text-2xl font-montserrat text-white'>Excelled in roles at renowned companies, contributing <br /> expertise to drive impactful results. 🌟 </p>
+            </div>
+            <div className='experience-bottom px-5'>
                 <div class="mt-10 tl-content tl-content-active">
                     <div className="tl-header">
                         <span className="tl-marker"></span>

@@ -1,14 +1,22 @@
-import React from 'react'
-import aboutImg from '../../assets/about.avif'
-import pinSeo from '../../assets/pin-seo.svg'
+import React, { useEffect } from 'react';
+import aboutImg from '../../assets/about.avif';
+import pinSeo from '../../assets/pin-seo.svg';
+import gsap from 'gsap'; 
 
-export default function about({aboutRef}) {
+export default function About() {
+  useEffect(() => { 
+    gsap.from('.about-left', { x: -260, ease: 'easeOut', opacity: 0 });
+    gsap.to('.about-left', 1, { x: 0, ease: 'easeOut', opacity: 1, });
+
+    gsap.from('.about-right', { x: 260, ease: 'easeOut', opacity: 1, });   
+    gsap.to('.about-right', 1, { x: 0, ease: 'easeOut', opacity: 1, });   
+  })
   return (
-    <div ref={aboutRef} className='grid grid-cols-1 md:grid-cols-7 gap-10 pt-20 md:mt-40 pt-20 md:pt-40 px-10 '>
-          <div className='col-span-1 md:col-span-3'>
+    <div className='grid grid-cols-1 md:grid-cols-7 gap-10 px-10 md:px-28 mt-80'>
+          <div className='about-left col-span-1 md:col-span-3'>
               <img src={aboutImg} className='w-full rounded-xl h-[400px] md:h-[650px]' alt="aboutImg" />
           </div>
-          <div className='col-span-1 md:col-span-4 mt-4 md:mt-12'>
+          <div className='about-right col-span-1 md:col-span-4 mt-4 md:mt-12'>
               <h5 className='font-bold text-lg font-montserrat text-sky-500 uppercase'>About Me</h5>
               <h1 className='mt-2 font-bold text-2xl font-montserrat text-white'> A dedicated Frontend Developer based in <br className='hidden md:block' /> New York, United States <img className='inline w-6 h-6' src={pinSeo} alt="pinSeo" /></h1>
               <p className='mt-4 font-medium text-base font-montserrat text-stone-400'>

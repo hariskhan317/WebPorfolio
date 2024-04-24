@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import Navbar from './components/navbar'
 import Home from './components/Home/home'
 import About from './components/About/about'
@@ -6,33 +6,43 @@ import Projects from './components/Projects/projects';
 import Experience from './components/Experience/experience'
 import Contact from './components/Contact/contact'
 import Footer from './components/Footer/footer'
+import SpaceBackground from './components/THREE/SpaceBackground'
 import './app.css'
+import gsap from 'gsap'; 
 
 function App() {
-  const sectionRef = {
-    home: useRef(null),
-    about: useRef(null),
-    experience: useRef(null),
-    projects: useRef(null),
-    contact: useRef(null),
-  }
+  const [isActive, setIsActive]  = useState('home') ;
 
+  useEffect(() => {
+    gsap.from('.navbar', { y: -150, opacity: 0 });
+    gsap.to('.navbar', 2, { y: -60, ease: 'easeOut', opacity: 1, });
+
+    gsap.from('.footer', { y: 260, opacity: 0 });
+    gsap.to('.footer', 2, { y: 10, ease: 'easeOut', opacity: 1, });
+  },[])
 
   const handleNavbarSection = (section) => {
-    sectionRef[section].current.scrollIntoView({ behavior: 'smooth' });
+    setIsActive(section) 
   }
   return (
     <>
       {/* Header */}
-      <Navbar handleNavbarSection={handleNavbarSection} />
-      <div className='container mx-auto max-w-8xl mt-20'>
-        <Home homeRef={sectionRef.home} />
-        <About aboutRef={sectionRef.about} />
-        <Projects projectsRef={sectionRef.projects} />
-        <Experience experienceRef={sectionRef.experience} />
-        <Contact contactRef={sectionRef.contact} />
+      <div className='absolute top-0 z-10'>
+        <SpaceBackground />
       </div>
-      <Footer />
+      <header className='navbar fixed top-20 left-0 w-full z-50'>
+        <Navbar isActive={isActive} handleNavbarSection={handleNavbarSection} />
+      </header>
+      <div className='relative z-20'>
+        { isActive === 'home' && (<Home />) }
+        { isActive === 'about' && (<About />) }
+        { isActive === 'projects' && (<Projects />) }
+        { isActive === 'experience' && (<Experience />) }
+        { isActive === 'contact' && (<Contact />) }
+      </div>
+      <footer className='footer fixed bottom-16 left-0 w-full z-50'>
+          <Footer />
+        </footer> 
     </>
   );
 }
