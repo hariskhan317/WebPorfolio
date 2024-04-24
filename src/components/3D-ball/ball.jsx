@@ -24,7 +24,7 @@ const Ball = () => {
 
         const geometry = new THREE.SphereGeometry(2, 64, 64);
         const material = new THREE.MeshStandardMaterial({
-            color: 0x5740a2,
+            color: 0x0ea5e9,
             roughness: 0.2,
         })
         const mesh = new THREE.Mesh(geometry, material)
@@ -33,8 +33,8 @@ const Ball = () => {
         camera.position.z = 15;
 
         // Add directional light with shadows
-        const directionalLight = new THREE.DirectionalLight(0xffffff, 1.5);
-        directionalLight.position.set(0, 10, 10);
+        const directionalLight = new THREE.DirectionalLight(0xffffff, 0.4);
+        directionalLight.position.set(1, 10, 10);
         directionalLight.castShadow = true;
 
         // orbit controls
