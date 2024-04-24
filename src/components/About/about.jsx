@@ -4,14 +4,14 @@ import pinSeo from '../../assets/pin-seo.svg'
 
 export default function about({aboutRef}) {
   return (
-    <div ref={aboutRef} className='grid grid-cols-1 md:grid-cols-7 gap-10 pt-20 md:mt-40 pt-20 md:pt-40 px-10 md:px-40'>
+    <div ref={aboutRef} className='grid grid-cols-1 md:grid-cols-7 gap-10 pt-20 md:mt-40 pt-20 md:pt-40 px-10 '>
           <div className='col-span-1 md:col-span-3'>
-              <img src={aboutImg} className='w-full rounded-xl' alt="aboutImg" />
+              <img src={aboutImg} className='w-full rounded-xl h-[400px] md:h-[650px]' alt="aboutImg" />
           </div>
           <div className='col-span-1 md:col-span-4 mt-4 md:mt-12'>
-              <h5 className='font-bold text-lg font-montserrat text-sky-800 uppercase'>About Me</h5>
-              <h1 className='mt-2 font-bold text-2xl font-montserrat text-black'> A dedicated Frontend Developer based in <br /> New York, United States <img className='inline w-6 h-6' src={pinSeo} alt="pinSeo" /></h1>
-              <p className='mt-4 font-medium text-base font-montserrat text-stone-600'>
+              <h5 className='font-bold text-lg font-montserrat text-sky-500 uppercase'>About Me</h5>
+              <h1 className='mt-2 font-bold text-2xl font-montserrat text-white'> A dedicated Frontend Developer based in <br className='hidden md:block' /> New York, United States <img className='inline w-6 h-6' src={pinSeo} alt="pinSeo" /></h1>
+              <p className='mt-4 font-medium text-base font-montserrat text-stone-400'>
                 👋 Hi there! I'm a passionate software engineer with a versatile skill set and a dedication to crafting engaging and efficient digital experiences.
                 <br /><br />
                 🎓 I earned my Bachelor's degree in Software Engineering from the esteemed University of Gujrat, where I gained a solid foundation in the principles of software development.

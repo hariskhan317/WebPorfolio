@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function navbar({handleNavbarSection}) {
     return (
-        <header className='fixed w-full top-0 px-10 bg-white border-b top-0 py-8 z-10'>
+        <header className='fixed w-full top-0 px-10 bg-black border-b border-stone-500 top-0 py-8 z-50'>
             <div className='flex justify-between'>
                 <div className='hidden sm:inline font-semibold text-xl font-montserrat'>Haris.dev</div>
                 <div>

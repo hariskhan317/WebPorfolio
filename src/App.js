@@ -6,6 +6,7 @@ import Projects from './components/Projects/projects';
 import Experience from './components/Experience/experience'
 import Contact from './components/Contact/contact'
 import Footer from './components/Footer/footer'
+import './app.css'
 
 function App() {
   const sectionRef = {
@@ -18,7 +19,6 @@ function App() {
 
 
   const handleNavbarSection = (section) => {
-    console.log('dasjd')
     sectionRef[section].current.scrollIntoView({ behavior: 'smooth' });
   }
   return (
