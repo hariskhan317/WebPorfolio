@@ -28,24 +28,24 @@ export default function Projects() {
         gsap.to('.techstack', 1.5, { y: 0, ease: 'Bounce.easeOut', opacity: 1, });  
     })
     return (
-        <div className='px-10 md:px-28 mt-80 projects'>
+        <div className='px-10 md:px-28 projects'>
             <div className='projects'>
                 <h1 className='text-center font-bold text-lg font-montserrat text-sky-500 uppercase'>Projects</h1>
-                <p className='text-center mt-1 font-bold text-2xl font-montserrat text-white'>Each Project is a Unique piece of Development 💻 </p>
+                <p className='text-center mt-1 font-bold text-lg md:text-2xl font-montserrat text-white'>Each Project is a Unique piece of Development 💻 </p>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-20'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-20'>
                 {/* project 1 */}
                 <div className='projects-left grid grid-cols-1 md:grid-cols-5 gap-6 md:mt-14'>
-                    <div className='col-span-1 md:col-span-2'>
+                    <div className='hidden md:block col-span-1 md:col-span-2'>
                         <a href='https://wander-wise.netlify.app/' target="_blank" rel="noreferrer" >
                             <img src={WanderWise} className='mt-4 w-full h-full md:h-44 rounded-lg' alt="" />
                         </a>
                     </div>
                     <div className='col-span-1 md:col-span-3 mt-10 md:mt-4'>
                         <div className='flex justify-between'>
-                            <div className='flex'>
-                                <MdLocationPin className='mt-1 text-2xl text-sky-500' />
-                                <p className='text-center text-2xl font-bold text-sky-500 font-montserrat'>Wander Wise</p>
+                            <div className='flex text-xl md:text-2xl'>
+                                <MdLocationPin className='mt-1 text-sky-500' />
+                                <p className='text-center font-bold text-sky-500 font-montserrat'>Wander Wise</p>
                             </div>
                             <div className='techstack flex gap-5 mt-1'>
                                 <img src={reactSvg} className='w-6 h-6' alt="reactSvg" />
@@ -74,16 +74,16 @@ export default function Projects() {
                 </div>
                 {/* project 2 */}
                 <div className='projects-right grid grid-cols-1 md:grid-cols-5 gap-6 md:mt-14'>
-                    <div className='col-span-1 md:col-span-2'>
+                    <div className='hidden md:block col-span-1 md:col-span-2'>
                         <a href='https://rate-pin-frontend.vercel.app/' target="_blank" rel="noreferrer" >
                             <img src={RatePin} className='mt-4 w-full h-full md:h-44 rounded-lg' alt="" />
                         </a>
                     </div>
                     <div className='col-span-1 md:col-span-3 mt-10 md:mt-4'>
                         <div className='flex justify-between'>
-                            <div className='flex'>
-                                <MdLocationPin className='mt-1 text-2xl text-sky-500' />
-                                <p className='text-center text-2xl font-bold text-sky-500 font-montserrat'>RatePin</p>
+                            <div className='flex text-xl md:text-2xl'>
+                                <MdLocationPin className='mt-1 text-sky-500' />
+                                <p className='text-center font-bold text-sky-500 font-montserrat'>RatePin</p>
                             </div>
                             <div className='techstack flex gap-5 mt-1'>
                                 <img src={reactSvg} className='w-6 h-6' alt="reactSvg" />

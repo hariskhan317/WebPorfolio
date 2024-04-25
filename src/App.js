@@ -33,7 +33,7 @@ function App() {
       <header className='navbar fixed top-20 left-0 w-full z-50'>
         <Navbar isActive={isActive} handleNavbarSection={handleNavbarSection} />
       </header>
-      <div className='relative z-20'>
+      <div className='relative flex justify-center items-center h-screen z-20'>
         { isActive === 'home' && (<Home />) }
         { isActive === 'about' && (<About />) }
         { isActive === 'projects' && (<Projects />) }

@@ -47,7 +47,7 @@ export default function SpaceBackground() {
         }
         animate();
 
-    }, [])
+    })
 
    return <div ref={sceneRef} />;
 }

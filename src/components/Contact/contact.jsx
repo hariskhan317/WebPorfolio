@@ -18,10 +18,10 @@ export default function Contact() {
     })
     
     return (
-        <div className='px-10 md:px-28 contact mt-72 flex justify-center'>
+        <div className='px-10 md:px-28 contact flex justify-center'>
             <div className=''>
                 <h1 className='text-center font-bold text-lg font-montserrat text-sky-500 uppercase'>Contact</h1>
-                <h1 className='text-center mt-1 font-bold text-2xl font-montserrat text-white'>Don't be shy! Hit me up! <img className='inline w-6 h-6' src={handDown} alt='handDown' /></h1>
+                <h1 className='text-center mt-1 font-bold text-lg md:text-2xl font-montserrat text-white'>Don't be shy! Hit me up! <img className='inline w-6 h-6' src={handDown} alt='handDown' /></h1>
                 <div className='flex gap-10 md:gap-20 flex-col md:flex-row justify-center mt-10'>
                     <div className='contact-left flex gap-5'>
                         <FaMapLocationDot size={40} className='text-sky-500' />

@@ -12,14 +12,14 @@ export default function About() {
     gsap.to('.about-right', 1, { x: 0, ease: 'easeOut', opacity: 1, });   
   })
   return (
-    <div className='grid grid-cols-1 md:grid-cols-7 gap-10 px-10 md:px-28 mt-80'>
-          <div className='about-left col-span-1 md:col-span-3'>
+    <div className='grid grid-cols-1 md:grid-cols-7 gap-10 px-10 md:px-28'>
+          <div className='hidden md:block about-left col-span-1 md:col-span-3'>
               <img src={aboutImg} className='w-full rounded-xl h-[400px] md:h-[650px]' alt="aboutImg" />
           </div>
-          <div className='about-right col-span-1 md:col-span-4 mt-4 md:mt-12'>
-              <h5 className='font-bold text-lg font-montserrat text-sky-500 uppercase'>About Me</h5>
-              <h1 className='mt-2 font-bold text-2xl font-montserrat text-white'> A dedicated Frontend Developer based in <br className='hidden md:block' /> New York, United States <img className='inline w-6 h-6' src={pinSeo} alt="pinSeo" /></h1>
-              <p className='mt-4 font-medium text-base font-montserrat text-stone-400'>
+          <div className='about-right col-span-1 md:col-span-4 mt-0 md:mt-12'>
+              <h5 className='text-center md:text-left font-bold text-lg font-montserrat text-sky-500 uppercase'>About Me</h5>
+              <h1 className='text-center md:text-left mt-2 font-bold text-lg md:text-2xl font-montserrat text-white'> A dedicated Frontend Developer based in <br className='hidden md:block' /> New York, United States <img className='inline w-6 h-6' src={pinSeo} alt="pinSeo" /></h1>
+              <p className='mt-4 text-center md:text-left font-medium text-sm md:text-base font-montserrat text-stone-400'>
                 👋 Hi there! I'm a passionate software engineer with a versatile skill set and a dedication to crafting engaging and efficient digital experiences.
                 <br /><br />
                 🎓 I earned my Bachelor's degree in Software Engineering from the esteemed University of Gujrat, where I gained a solid foundation in the principles of software development.
