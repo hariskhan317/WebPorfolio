@@ -10,13 +10,13 @@ import gsap from 'gsap';
 export default function Home() {
     
     useEffect(() => { 
-        gsap.from('.home', { y: 260, opacity: 0 });
-        gsap.to('.home', 1, { y: 100, ease: 'easeOut', opacity: 1, });   
+        gsap.from('.home', { y: -60, opacity: 0 });
+        gsap.to('.home', 1, { y:100, ease: 'easeOut', opacity: 1, });   
       })
     return (
         <div className='home'>
             <div className='px-10 md:px-0'>
-                <div className='absolute top-[550px] text-center mx-auto relative z-10'>
+                <div className='text-center mx-auto relative z-50'>
                     <h1 className='font-bold text-3xl md:text-6xl font-montserrat'>Front-End React Developer <img className='inline w-10 h-10' src={wavingHand} alt='wavingHand' /> </h1>
                     <p className='px-7 mt-6 font-medium text-base md:text-lg font-montserrat text-stone-400'>Hi, I'm Haris Khan. A passionate Frontend Developer based in New York, United States <img className='inline w-6 h-6' src={pinSeo} alt='pinSeo' /></p>
                     <div className='flex justify-center gap-5 mt-6'>
@@ -29,7 +29,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className=''> 
-                    <div className=' -mt-40 z-0'>
+                    <div className='absolute top-[-500px] mx-auto -right-96 z-0'>
                         <Ball/>
                     </div>
                 </div>

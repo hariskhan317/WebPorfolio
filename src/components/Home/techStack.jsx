@@ -5,7 +5,7 @@ import gsap from 'gsap';
 export default function TechStack() {
     useEffect(() => { 
         gsap.from('.techstack', { y: 260, opacity: 0 });
-        gsap.to('.techstack', 2, { y: 0, ease: 'Bounce.easeOut', opacity: 1, });  
+        gsap.to('.techstack', 2.3, { y: 0, ease: 'Bounce.easeOut', opacity: 1, });  
     })
 
     return (
