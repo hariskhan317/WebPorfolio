@@ -1,5 +1,4 @@
-import React, {useEffect} from 'react'
-import { MdLocationPin } from "react-icons/md";
+import React, {useEffect} from 'react' 
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 import gsap from 'gsap'; 
