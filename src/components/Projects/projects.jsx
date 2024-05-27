@@ -56,12 +56,12 @@ export default function Projects() {
                                         <FaGithub className='mt-0.5' />
                                     </a>
                                 </div>
-                                <div>
+                                {project.liveDemo && (                          <div>
                                     <a href={project.liveDemo} target="_blank" rel="noreferrer" className='flex gap-1.5 text-base text-stone-400 underline font-semibold font-montserrat'>
                                         Live Demo
                                         <FaExternalLinkAlt className='mt-0.5' />
                                     </a>
-                                </div>
+                                </div>)} 
                             </div>
                         </div>
                     </div>
