@@ -1,5 +1,5 @@
 import RatePin from '../../assets/ratepin.png'
-import Spendex from '../../assets/spendex.png'
+// import Spendex from '../../assets/spendex.png'
 import WanderWise from '../../assets/wanderwise.png'
 import reactSvg from '../../assets/react.svg'
 import tailwind from '../../assets/tailwindcss.svg'
