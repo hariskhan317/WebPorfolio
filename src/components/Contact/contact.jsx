@@ -21,7 +21,7 @@ export default function Contact() {
     }, [isMobile])
     
     return (
-        <div className='mt-10 md:mt-0 px-10 md:px-28 contact flex justify-center'>
+        <div className='mb-10 md:mb-0 mt-10 md:mt-0 px-10 md:px-28 contact flex justify-center'>
             <div className=''>
                 <h1 className='text-center font-bold text-lg font-montserrat text-sky-500 uppercase'>Contact</h1>
                 <h1 className='text-center mt-1 font-bold text-base md:text-2xl font-montserrat text-white'>Don't be shy! Hit me up! <img className='inline w-6 h-6' src={handDown} alt='handDown' /></h1>

@@ -18,7 +18,7 @@ export default function Home() {
       }, [isMobile])
     return (
         <div className='home h-[100vh] md:h-auto'>
-            <div className='text-center mx-auto absolute top-[15%] md:top-[40%] left-0 right-0 z-50'>
+            <div className='text-center mx-auto absolute top-[4%] md:top-[40%] left-0 right-0 z-50'>
                 <div className='px-0'>
                     <h1 className='font-bold text-3xl md:text-6xl font-montserrat'>Front-End React Developer <img className='inline w-10 h-10' src={wavingHand} alt='wavingHand' /> </h1>
                     <p className='px-7 mt-6 font-medium text-base md:text-lg font-montserrat text-stone-400'>Hi, I'm Haris Khan. A passionate Frontend Developer based in New York, United States <img className='inline w-6 h-6' src={pinSeo} alt='pinSeo' /></p>
