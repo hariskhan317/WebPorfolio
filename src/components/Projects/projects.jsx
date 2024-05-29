@@ -3,28 +3,32 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 import gsap from 'gsap'; 
 import { projects } from './projectList';
+import useIsMobile from '../../hooks/useIsMobile';
 
 
 
 export default function Projects() {
+    const isMobile = useIsMobile();
     useEffect(() => { 
-        gsap.from('.projects', { y: -260, opacity: 0 });
-        gsap.to('.projects', 1, { y: 0, ease: 'easeOut', opacity: 1, });  
-
-        gsap.from('.projects-left', { x: -260, ease: 'easeOut', opacity: 0 });
-        gsap.to('.projects-left', 1, { x: 0, ease: 'easeOut', opacity: 1, });
+        if (!isMobile) {
+            gsap.from('.projects', { y: -260, opacity: 0 });
+            gsap.to('.projects', 1, { y: 0, ease: 'easeOut', opacity: 1, });  
     
-        gsap.from('.projects-right', { x: 260, ease: 'easeOut', opacity: 1, });   
-        gsap.to('.projects-right', 1, { x: 0, ease: 'easeOut', opacity: 1, });   
-
-        gsap.from('.techstack', { y: -160, opacity: 0 });
-        gsap.to('.techstack', 1.5, { y: 0, ease: 'Bounce.easeOut', opacity: 1, });  
-    })
+            gsap.from('.projects-left', { x: -260, ease: 'easeOut', opacity: 0 });
+            gsap.to('.projects-left', 1, { x: 0, ease: 'easeOut', opacity: 1, });
+        
+            gsap.from('.projects-right', { x: 260, ease: 'easeOut', opacity: 1, });   
+            gsap.to('.projects-right', 1, { x: 0, ease: 'easeOut', opacity: 1, });   
+    
+            gsap.from('.techstack', { y: -160, opacity: 0 });
+            gsap.to('.techstack', 1.5, { y: 0, ease: 'Bounce.easeOut', opacity: 1, });  
+        }
+    },[])
     return (
-        <div className='px-10 md:px-28 projects'>
+        <div className='mt-20 md:mt-0 px-10 md:px-28 projects'>
             <div className='projects'>
                 <h1 className='text-center font-bold text-lg font-montserrat text-sky-500 uppercase'>Projects</h1>
-                <p className='text-center mt-1 font-bold text-lg md:text-2xl font-montserrat text-white'>Each Project is a Unique piece of Development 💻 </p>
+                <p className='text-center mt-1 font-bold text-base md:text-2xl font-montserrat text-white'>Each Project is a Unique piece of Development 💻 </p>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-20'>
                 {projects.map((project, index) => (
@@ -35,19 +39,19 @@ export default function Projects() {
                             </a>
                         </div>
                         <div className='col-span-1 md:col-span-3 mt-10 md:mt-4'>
-                            <div className='flex justify-between'>
+                            <div className='flex justify-between flex-col md:flex-row gap-0'>
                                 <div className='flex text-xl md:text-2xl'>
                                     <div>{ project.icon}</div>
-                                    <p className='text-center font-bold text-lg mt-0.5 text-sky-500 font-montserrat'>{project.name}</p>
+                                    <p className='text-center font-semibold md:font-bold text-base md:text-lg mt-0.5 text-sky-500 font-montserrat'>{project.name}</p>
                                 </div>
-                                <div className='techstack flex gap-3 mt-1'> 
+                                <div className='techstack justify-end flex gap-3 mt-1'> 
                                     {project.techstack.map((item) => (
                                         <img src={item} className='w-5 h-5' alt="reactSvg" />
                                     ))}
                                 </div>  
                             </div>
                             <div className='pt-2 pb-3'>
-                                <p className='font-medium text-base py-4 md:py-0 md:text-[13px] font-montserrat text-stone-400'> {project.description}</p>
+                                <p className='font-medium text-sm py-2 md:py-0 md:text-[13px] font-montserrat text-stone-400'> {project.description}</p>
                             </div>
                             <div className='flex justify-start gap-12 pl-3'>
                                 <div>

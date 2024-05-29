@@ -1,33 +1,36 @@
 import React, {useEffect} from 'react'
 import '../../assets/style.css'
 import gsap from 'gsap'; 
+import useIsMobile from '../../hooks/useIsMobile';
 
 export default function Experience() {
-
+    const isMobole = useIsMobile();
     useEffect(() => { 
-        gsap.from('.experience', { y: 260, opacity: 0 });
-        gsap.to('.experience', 1, { y: 0, ease: 'easeOut', opacity: 1, });  
-
-        gsap.from('.experience-bottom', { y: -260, opacity: 0 });
-        gsap.to('.experience-bottom', 2, { y: 0, ease: 'easeOut', opacity: 1, });  
+        if (!isMobole) {
+            gsap.from('.experience', { y: 260, opacity: 0 });
+            gsap.to('.experience', 1, { y: 0, ease: 'easeOut', opacity: 1, });  
+    
+            gsap.from('.experience-bottom', { y: -260, opacity: 0 });
+            gsap.to('.experience-bottom', 2, { y: 0, ease: 'easeOut', opacity: 1, });     
+        }
       })
 
     return (
-        <div className="px-10 md:px-28">
+        <div className="mt-20 md:mt-0 px-5 md:px-28">
             <div className=''>
                 <div className='experience'>
                     <h1 className='text-center font-bold text-lg font-montserrat text-sky-500 uppercase'>Experience</h1>
-                    <p className='text-center mt-1 font-bold text-lg md:text-2xl font-montserrat text-white'>Excelled in roles at renowned companies, contributing <br /> expertise to drive impactful results. 🌟 </p>
+                    <p className='text-center mt-1 font-bold text-base md:text-2xl font-montserrat text-white'>Excelled in roles at renowned companies, contributing <br /> expertise to drive impactful results. 🌟 </p>
                 </div>
-                <div className='experience-bottom px-5'>
+                <div className='experience-bottom px-0 md:px-5'>
                     <div class="mt-4 md:mt-10 tl-content tl-content-active">
                         <div className="tl-header">
                             <span className="tl-marker"></span>
                             <p className="-mt-4 font-semibold text-base md:text-lg font-montserrat uppercase text-white border-b border-stone-300"> Frontend Developer AT TRADEZELLA </p>
-                            <time className='mt-6 font-medium text-xs font-montserrat text-stone-300' datetime="2023-06-20"> Oct 2022 - Mar 2024 </time>
+                            <time className='mt-3 md:mt-6 font-medium text-xs font-montserrat text-stone-300' datetime="2023-06-20"> Oct 2022 - Mar 2024 </time>
                         </div>
                         <div className="tl-body">
-                            <ul className='pt-5 pb-7 list-disc px-5'>
+                            <ul className='pt-5 pb-7 list-disc px-0 md:px-5'>
                                 <li className='font-medium text-xs md:text-base font-montserrat text-stone-400'>Led the strategic development of innovative user interfaces, harnessing cutting-edge technologies such as HTML5, CSS3, Material UI, React, and Redux to deliver an unparalleled user experience.</li>
                                 <li className='font-medium text-xs md:text-base font-montserrat text-stone-400'>We revamped the Dark Mode functionality using a custom react hook, which resulted in a remarkable 20% increase in user satisfaction and a substantial enhancement in overall usability.</li>
                                 <li className='font-medium text-xs md:text-base font-montserrat text-stone-400'>We utilized a React custom hook to amplify mobile responsiveness, resulting in a notable 30% advancement in load times and optimizing user engagement to the fullest extent.</li>
@@ -40,10 +43,10 @@ export default function Experience() {
                         <div className="tl-header">
                             <span className="tl-marker"></span>
                             <p className="-mt-4 font-semibold text-base md:text-lg font-montserrat uppercase text-white border-b border-stone-300"> FREELANCER AT FIVERR</p>
-                            <time className='mt-6 font-medium text-xs font-montserrat text-stone-400' datetime="2023-06-20">Sept 2021 – Aug 2022</time>
+                            <time className='mt-3 md:mt-6 font-medium text-xs font-montserrat text-stone-400' datetime="2023-06-20">Sept 2021 – Aug 2022</time>
                         </div>
                         <div className="tl-body">
-                            <ul className='pt-5 pb-7 list-disc px-5'>
+                            <ul className='pt-5 pb-7 list-disc px-0 md:px-5'>
                                 <li className='font-medium text-xs md:text-base font-montserrat text-stone-400'>Professionally Managed and Executed Diverse Web Development Projects, Demonstrating Proficiency in HTML, CSS, and JavaScript.</li>
                                 <li className='font-medium text-xs md:text-base font-montserrat text-stone-400'>Effectively Utilized Leading Frontend Frameworks Including Tailwind CSS, Material UI, and Bootstrap to Craft Responsive and Visually Engaging User Interfaces.</li>
                                 <li className='font-medium text-xs md:text-base font-montserrat text-stone-400'>Implemented Dynamic and Interactive Components with Vue.js, Enhancing User Experiences and Elevating Website Functionality.</li>
