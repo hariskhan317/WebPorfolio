@@ -23,7 +23,7 @@ function App() {
       gsap.from('.footer', { y: 260, opacity: 0 });
       gsap.to('.footer', 2, { y: 10, ease: 'easeOut', opacity: 1, });
     }
-  },[])
+  },[isMobile])
 
   const handleNavbarSection = (section) => {
     setIsActive(section) 

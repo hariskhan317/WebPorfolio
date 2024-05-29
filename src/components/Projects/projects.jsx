@@ -23,7 +23,7 @@ export default function Projects() {
             gsap.from('.techstack', { y: -160, opacity: 0 });
             gsap.to('.techstack', 1.5, { y: 0, ease: 'Bounce.easeOut', opacity: 1, });  
         }
-    },[])
+    },[isMobile])
     return (
         <div className='mt-20 md:mt-0 px-10 md:px-28 projects'>
             <div className='projects'>

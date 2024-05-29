@@ -6,9 +6,9 @@ import gsap from 'gsap';
 import useIsMobile from '../../hooks/useIsMobile';
 
 export default function Contact() {
-    const isMobole = useIsMobile();
+    const isMobile = useIsMobile();
     useEffect(() => { 
-        if (!isMobole) {
+        if (!isMobile) {
             gsap.from('.contact', { y: 260, opacity: 0 });
             gsap.to('.contact', 1, { y: 0, ease: 'easeOut', opacity: 1, });  
     
@@ -18,7 +18,7 @@ export default function Contact() {
             gsap.from('.contact-right', { x: 260, ease: 'easeOut', opacity: 1, });   
             gsap.to('.contact-right', 1, { x: 0, ease: 'easeOut', opacity: 1, });      
         }
-    })
+    }, [isMobile])
     
     return (
         <div className='mt-10 md:mt-0 px-10 md:px-28 contact flex justify-center'>

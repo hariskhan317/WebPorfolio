@@ -15,7 +15,7 @@ export default function Home() {
             gsap.from('.home', { y: -60, opacity: 0 });
             gsap.to('.home', 1, { y:0, ease: 'easeOut', opacity: 1, }); 
         }
-      })
+      }, [isMobile])
     return (
         <div className='home h-[100vh] md:h-auto'>
             <div className='text-center mx-auto absolute top-[15%] md:top-[40%] left-0 right-0 z-50'>

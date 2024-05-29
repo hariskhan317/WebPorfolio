@@ -14,7 +14,7 @@ export default function About() {
       gsap.from('.about-right', { x: 260, ease: 'easeOut', opacity: 1, });   
       gsap.to('.about-right', 1, { x: 0, ease: 'easeOut', opacity: 1, });    
     }
-  })
+  },[isMobile])
   return (
     <div className='mt-20 md:mt-0 grid grid-cols-1 md:grid-cols-7 gap-10 px-10 md:px-28'>
           <div className='hidden md:block about-left col-span-1 md:col-span-3'>

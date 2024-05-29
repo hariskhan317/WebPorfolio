@@ -4,16 +4,16 @@ import gsap from 'gsap';
 import useIsMobile from '../../hooks/useIsMobile';
 
 export default function Experience() {
-    const isMobole = useIsMobile();
+    const isMobile = useIsMobile();
     useEffect(() => { 
-        if (!isMobole) {
+        if (!isMobile) {
             gsap.from('.experience', { y: 260, opacity: 0 });
             gsap.to('.experience', 1, { y: 0, ease: 'easeOut', opacity: 1, });  
     
             gsap.from('.experience-bottom', { y: -260, opacity: 0 });
             gsap.to('.experience-bottom', 2, { y: 0, ease: 'easeOut', opacity: 1, });     
         }
-      })
+      },[isMobile])
 
     return (
         <div className="mt-20 md:mt-0 px-5 md:px-28">

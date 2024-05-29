@@ -10,7 +10,7 @@ export default function TechStack() {
             gsap.from('.techstack', { y: 260, opacity: 0 });
             gsap.to('.techstack', 2.3, { y: -310, ease: 'Bounce.easeOut', opacity: 1, });     
         }
-    })
+    }, [isMobile])
 
     return (
         <div className='techstack flex flex-col lg:flex-row justify-center gap-10 mt-14 md:mt-0 px-10 md:px-0 z-30 relative'>
