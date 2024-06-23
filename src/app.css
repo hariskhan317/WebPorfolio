@@ -1,12 +1,7 @@
 body{
-    overflow: hidden;
+    overflow-x: hidden !important;
+    overflow-y: scroll !important;
     background-color: black;
     color: white
 }
-
-@media screen and (max-width: 800px) {
-    body {
-        overflow-x: hidden !important;
-        overflow-y: scroll !important;
-    }
-  }
+ 

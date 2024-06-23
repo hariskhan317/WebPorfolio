@@ -1,22 +1,10 @@
-import React, {useEffect} from 'react'
-import '../../assets/style.css'
-import gsap from 'gsap'; 
-import useIsMobile from '../../hooks/useIsMobile';
+import React from 'react'
+import '../../assets/style.css' 
 
-export default function Experience() {
-    const isMobile = useIsMobile();
-    useEffect(() => { 
-        if (!isMobile) {
-            gsap.from('.experience', { y: 260, opacity: 0 });
-            gsap.to('.experience', 1, { y: 0, ease: 'easeOut', opacity: 1, });  
-    
-            gsap.from('.experience-bottom', { y: -260, opacity: 0 });
-            gsap.to('.experience-bottom', 2, { y: 0, ease: 'easeOut', opacity: 1, });     
-        }
-      },[isMobile])
+export default function Experience() { 
 
     return (
-        <div className="mt-20 md:mt-0 px-5 md:px-28">
+        <div id="experience" className="mt-20 px-5 md:px-28">
             <div className=''>
                 <div className='experience'>
                     <h1 className='text-center font-bold text-lg font-montserrat text-sky-500 uppercase'>Experience</h1>

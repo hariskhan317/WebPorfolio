@@ -1,36 +1,16 @@
-import React, {useEffect} from 'react' 
+import React from 'react' 
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-
-import gsap from 'gsap'; 
-import { projects } from './projectList';
-import useIsMobile from '../../hooks/useIsMobile';
-
-
+import { projects } from './projectList'; 
 
 export default function Projects() {
-    const isMobile = useIsMobile();
-    useEffect(() => { 
-        if (!isMobile) {
-            gsap.from('.projects', { y: -260, opacity: 0 });
-            gsap.to('.projects', 1, { y: 0, ease: 'easeOut', opacity: 1, });  
-    
-            gsap.from('.projects-left', { x: -260, ease: 'easeOut', opacity: 0 });
-            gsap.to('.projects-left', 1, { x: 0, ease: 'easeOut', opacity: 1, });
-        
-            gsap.from('.projects-right', { x: 260, ease: 'easeOut', opacity: 1, });   
-            gsap.to('.projects-right', 1, { x: 0, ease: 'easeOut', opacity: 1, });   
-    
-            gsap.from('.techstack', { y: -160, opacity: 0 });
-            gsap.to('.techstack', 1.5, { y: 0, ease: 'Bounce.easeOut', opacity: 1, });  
-        }
-    },[isMobile])
+
     return (
-        <div className='mt-20 md:mt-0 px-10 md:px-28 projects'>
+        <div id="projects" className='mt-20 md:mt-64 px-10 md:px-28 projects'>
             <div className='projects'>
                 <h1 className='text-center font-bold text-lg font-montserrat text-sky-500 uppercase'>Projects</h1>
                 <p className='text-center mt-1 font-bold text-base md:text-2xl font-montserrat text-white'>Each Project is a Unique piece of Development 💻 </p>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-20'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-20 mt-14'>
                 {projects.map((project, index) => (
                     <div key={index} className='projects-left grid grid-cols-1 md:grid-cols-5 gap-6 md:mt-14'>
                         <div className='hidden md:block col-span-1 md:col-span-2'>

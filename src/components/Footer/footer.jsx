@@ -5,7 +5,7 @@ import { FaLinkedin } from 'react-icons/fa6';
 export default function footer() {
   return (
     <div className='bg-transparent w-full'>
-        <div className='container mx-auto max-w-9xl pt-6 md:pt-0 pb-4 md:pb-0'>
+        <div className='container mx-auto max-w-9xl pt-6 md:pt-32 pb-4 md:pb-10'>
             <div className='flex justify-between'>
                 <div className='flex text-center mx-auto md:mx-0'>
                     <p className='mt-1.5 font-medium text-white text-xs md:text-base font-montserrat border-r pr-4'>&copy; Haris.dev</p>

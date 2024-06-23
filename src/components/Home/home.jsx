@@ -1,24 +1,19 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import TechStack from './techStack';
 import { AiFillGithub } from 'react-icons/ai';
 import { FaLinkedin } from 'react-icons/fa6';
 import wavingHand from '../../assets/waving-hand.svg'
 import pinSeo from '../../assets/pin-seo.svg'
 import Ball from '../THREE/ball'
-import gsap from 'gsap'; 
-import useIsMobile from '../../hooks/useIsMobile';
+import arrow from "../../assets/arrow.svg";
+import { FaDownload } from "react-icons/fa6";
+ 
 
 export default function Home() {
-    const isMobile = useIsMobile();
-    useEffect(() => { 
-        if (!isMobile) {
-            gsap.from('.home', { y: -60, opacity: 0 });
-            gsap.to('.home', 1, { y:0, ease: 'easeOut', opacity: 1, }); 
-        }
-      }, [isMobile])
+ 
     return (
-        <div className='home h-[100vh] md:h-auto'>
-            <div className='text-center mx-auto absolute top-[4%] md:top-[40%] left-0 right-0 z-50'>
+        <div id="home" className='home'>
+            <div className='text-center mx-auto absolute top-[4%] md:top-[10%] left-0 right-0 z-50'>
                 <div className='px-0'>
                     <h1 className='font-bold text-3xl md:text-6xl font-montserrat'>Front-End React Developer <img className='inline w-10 h-10' src={wavingHand} alt='wavingHand' /> </h1>
                     <p className='px-7 mt-6 font-medium text-base md:text-lg font-montserrat text-stone-400'>Hi, I'm Haris Khan. A passionate Frontend Developer based in New York, United States <img className='inline w-6 h-6' src={pinSeo} alt='pinSeo' /></p>
@@ -30,6 +25,7 @@ export default function Home() {
                             <FaLinkedin size={40} />
                         </a>
                     </div>
+                    <TechStack />
                 </div>
             </div>
             <div className=''> 
@@ -37,7 +33,6 @@ export default function Home() {
                     <Ball/>
                 </div>
             </div>
-            <TechStack />
         </div>
     )
 }
