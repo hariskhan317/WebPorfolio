@@ -4,9 +4,7 @@ import { AiFillGithub } from 'react-icons/ai';
 import { FaLinkedin } from 'react-icons/fa6';
 import wavingHand from '../../assets/waving-hand.svg'
 import pinSeo from '../../assets/pin-seo.svg'
-import Ball from '../THREE/ball'
-import arrow from "../../assets/arrow.svg";
-import { FaDownload } from "react-icons/fa6";
+import Ball from '../THREE/ball' 
  
 
 export default function Home() {
