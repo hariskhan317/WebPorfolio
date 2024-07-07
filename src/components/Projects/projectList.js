@@ -1,4 +1,5 @@
 import RatePin from '../../assets/ratepin.png'
+import Quiz from '../../assets/quiz.png'
 import Spendex from '../../assets/spendex.png'
 import WanderWise from '../../assets/wanderwise.png'
 import reactSvg from '../../assets/react.svg'
@@ -6,13 +7,25 @@ import tailwind from '../../assets/tailwindcss.svg'
 import javaScript from '../../assets/javascript.svg'
 import ChatgptClone from '../../assets/ChatgptClone.png'
 import express from '../../assets/express.svg'
+import Typescript from '../../assets/typescript.svg'
 import mongodb from '../../assets/mongodb.svg'
 import node from '../../assets/node2.svg' 
 import { MdLocationPin } from "react-icons/md";
 import { LuBrainCircuit } from "react-icons/lu";
 import { GrCalculator } from "react-icons/gr";
+import { BsPatchQuestionFill } from "react-icons/bs";
+
 
 export const projects = [
+    {
+        'img': Quiz,
+        'icon': <BsPatchQuestionFill className='mt-1 mr-2 text-sky-500' />,
+        'name': 'QuizZen',
+        'techstack': [reactSvg, tailwind, Typescript, javaScript, express, mongodb, node],
+        'description': "I developed a MERN stack quiz application utilizing React, Tailwind CSS, TypeScript, Node.js, MongoDB, and Express. This app leverages OpenAI to generate new questions based on user input, ensuring a unique and engaging experience each time. It uses JWT for secure authentication, React Router for smooth navigation, and Redux for efficient state management. The backend, built with Express and Node.js, interfaces with MongoDB for robust data storage.",
+        'githubLink': 'https://github.com/hariskhan317/Quizzen',
+        'liveDemo': 'https://quizzen-frontend.vercel.app/'
+    },
     {
         'img': Spendex,
         'icon': <GrCalculator className='mt-1 mr-2 text-sky-500' />,
